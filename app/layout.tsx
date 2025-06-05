@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header"; // adjust path if needed
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,7 +12,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-export const metadata = {
+
+export const metadata: Metadata = {
   title: "Shysta Sehgal",
   description: "PhD student in Biomedical Engineering",
   icons: {
@@ -24,14 +26,16 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className="bg-gradient-to-b from-zinc-900 to-black text-white">
-        {children}
+        className={`bg-gradient-to-b from-zinc-900 to-black text-white ${geistSans.variable} ${geistMono.variable}`}
+      >
+        <Header />
+        <main className="px-6">{children}</main>
       </body>
     </html>
   );

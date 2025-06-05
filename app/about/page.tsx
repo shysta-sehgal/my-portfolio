@@ -111,12 +111,6 @@ export default function AboutPage() {
           </li>
         </ul>
       </section>
-      <Link
-  href="/"
-  className="inline-block mt-12 px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition"
->
-  ← Back to Home
-</Link>
     </main>
   );
   
