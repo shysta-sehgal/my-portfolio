@@ -75,7 +75,9 @@ export default function ProjectsPage() {
                 <div
                   key={key}
                   className="border-b border-gray-700 py-4"
-                  ref={(el) => (refs.current[key] = el)}
+                  ref={(el) => {
+  refs.current[key] = el;
+}}
                 >
                   <button
                     className="w-full text-left text-xl font-semibold hover:text-rose-400 transition"
