@@ -15,7 +15,7 @@ export default function Home() {
     {/* <main className="min-h-screen flex flex-col items-center justify-center text-center p-8 space-y-6"> */}
       <h1 className="text-4xl font-bold">Hey, I’m Shysta Sehgal</h1>
 <div className="text-xl max-w-xl leading-relaxed">
-  PhD student @{" "}
+  Ph.D. student @{" "}
   <a
     href="https://torontotnbs.com"
     className="text-rose-400 hover:text-rose-300 underline underline-offset-4 decoration-[1px] decoration-rose-400 hover:decoration-rose-300 transition"
@@ -26,7 +26,7 @@ export default function Home() {
   </a>
 </div>
 <p className="text-xl max-w-xl">
-  Previously CS & CogSci @ UofT
+  Previously, B.Sc. (Hons) CS & CogSci @ UofT
 </p>
       <div className="space-x-4">
         <a
