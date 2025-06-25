@@ -13,7 +13,7 @@ export default function Home() {
   />
 </div>
     {/* <main className="min-h-screen flex flex-col items-center justify-center text-center p-8 space-y-6"> */}
-      <h1 className="text-4xl font-bold">Hey, I’m Shysta Sehgal</h1>
+      <h1 className="text-4xl font-bold">Hi, I’m Shysta Sehgal</h1>
 <div className="text-xl max-w-xl leading-relaxed">
   Ph.D. student @{" "}
   <a
@@ -28,20 +28,7 @@ export default function Home() {
 <p className="text-xl max-w-xl">
   Previously, B.Sc. (Hons) CS & CogSci @ UofT
 </p>
-      <div className="space-x-4">
-        <a
-          href="/about"
-          className="inline-block px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 hover:opacity-90 transition"
-        >
-          About Me
-        </a>
-        <a
-          href="/projects"
-          className="inline-block px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 hover:opacity-90 transition"
-        >
-          Projects
-        </a>
-      </div>
+     
     </main>
   );
 }

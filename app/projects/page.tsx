@@ -22,7 +22,7 @@ const projectsByYear: Record<string, Project[]> = {
   ],
   "2024": [
     {
-      title: "🎵 Deep Music Generation Robustness",
+      title: "🎧 Deep Music Generation Robustness",
       description:
         "Recent advances in deep music generation frequently involve training on extensive datasets comprising thousands of hours of music. However, despite the availability of such data, many contemporary models, such as MetaAI’s MusicGen, often forego the implementation of data augmentation techniques during pre-processing. This oversight raises questions about the robustness and flexibility of the models when confronted with modified input data. This study aims to bridge this gap by conducting experiments that employ diverse augmentation techniques, including pitch shifting, time stretching, and volume modification, to critically assess the model’s ability to maintain musical coherence and quality. By presenting both original and systematically augmented datasets to MusicGen, we evaluate the model’s generative performance through quantitative metrics such as Root Mean Squared Error and Mel-frequency Cepstral Coefficients, as well as qualitative human judgment via a Turing-like test. The findings suggest that while the model demonstrates a basic competency in generating continuations from unaltered prompts, its ability to adapt to and correct for augmented inputs is limited. These results underscore the necessity for incorporating resilience to data imperfections as a key criterion in the evolution of deep learning models for music generation.",
       github: "https://github.com/shysta-sehgal/MusicGen",
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold mb-8">Projects and Papers</h1>
+      <h1 className="text-4xl font-bold mb-8">🚧 Projects and Papers</h1>
 
       {Object.entries(projectsByYear)
         .sort(([a], [b]) => parseInt(b) - parseInt(a))

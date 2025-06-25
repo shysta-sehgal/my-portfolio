@@ -1,17 +1,11 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/header"; // adjust path if needed
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/header';
+import { Providers } from './providers';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
+const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Shysta Sehgal",
@@ -24,18 +18,23 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`bg-gradient-to-b from-zinc-900 to-black text-white ${geistSans.variable} ${geistMono.variable}`}
+    <html lang="en" suppressHydrationWarning>
+      <body 
+        className={`
+          min-h-screen
+          bg-gradient-to-b from-zinc-900 to-black 
+          text-white 
+          ${geistSans.variable} 
+          ${geistMono.variable}
+        `}
+        suppressHydrationWarning
       >
-        <Header />
-        <main className="px-6">{children}</main>
+        <Providers>
+          <Header />
+          <main className="px-6">{children}</main>
+        </Providers>
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function AboutPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 space-y-8">
-      <h1 className="text-4xl font-bold mb-4">About Me</h1>
+      <h1 className="text-4xl font-bold mb-4">🙋‍♀️ About Me</h1>
 
       <p className="text-lg leading-relaxed">
         I'm a PhD student in <strong>Biomedical Engineering</strong> at the University of Toronto, working in the{" "}
@@ -49,7 +49,7 @@ export default function AboutPage() {
 
       <p className="text-lg leading-relaxed">
         Outside of research, I enjoy listening to braindance and trip-hop, watching surrealistic movies I don't understand,
-        making very specific to-do lists about things I might never do, and reading psychology and philosophy.
+        making very specific to-do lists about things I might never do, taking care of my plants, lifting, and reading psychology and philosophy.
         I indulge in daily espresso and choline overdose.
       </p>
 
@@ -59,12 +59,12 @@ export default function AboutPage() {
         <ul className="space-y-6">
           <li className="flex items-center gap-6">
             <Image
-  src="/amritsar.jpg"
-  alt="Amritsar"
-  width={56}
-  height={56}
-  className="rounded-xl shadow-md object-cover aspect-square"
-/>
+              src="/amritsar.jpg"
+              alt="Amritsar"
+              width={56}
+              height={56}
+              className="rounded-xl shadow-md object-cover aspect-square"
+            />
             <div>
               <time className="text-sm text-gray-400">2001</time>
               <p className="text-base text-white font-medium">Born in Amritsar, India</p>
@@ -72,12 +72,12 @@ export default function AboutPage() {
           </li>
           <li className="flex items-center gap-6">
             <Image
-  src="/uoft.jpg"
-  alt="Uoft"
-  width={56}
-  height={56}
-  className="rounded-xl shadow-md object-cover aspect-square"
-/>
+              src="/uoft.jpg"
+              alt="Uoft"
+              width={56}
+              height={56}
+              className="rounded-xl shadow-md object-cover aspect-square"
+            />
             <div>
               <time className="text-sm text-gray-400">2020</time>
               <p className="text-base text-white font-medium">Started undergrad at UofT (Covid-era)</p>
@@ -85,12 +85,12 @@ export default function AboutPage() {
           </li>
           <li className="flex items-center gap-6">
             <Image
-  src="/toronto.jpg"
-  alt="Toronto"
-  width={56}
-  height={56}
-  className="rounded-xl shadow-md object-cover aspect-square"
-/>
+              src="/toronto.jpg"
+              alt="Toronto"
+              width={56}
+              height={56}
+              className="rounded-xl shadow-md object-cover aspect-square"
+            />
             <div>
               <time className="text-sm text-gray-400">2021</time>
               <p className="text-base text-white font-medium">Moved to Toronto</p>
@@ -98,12 +98,25 @@ export default function AboutPage() {
           </li>
           <li className="flex items-center gap-6">
             <Image
-  src="/phd.jpg"
-  alt="PHD"
-  width={56}
-  height={56}
-  className="rounded-xl shadow-md object-cover aspect-square"
-/>
+              src="/istanbul.jpg"
+              alt="Istanbul"
+              width={56}
+              height={56}
+              className="rounded-xl shadow-md object-cover aspect-square"
+            />
+            <div>
+              <time className="text-sm text-gray-400">2022</time>
+              <p className="text-base text-white font-medium">Traveled to Istanbul, which was the closest exeprience to heaven on earth for me</p>
+            </div>
+          </li>
+          <li className="flex items-center gap-6">
+            <Image
+              src="/phd.jpg"
+              alt="PHD"
+              width={56}
+              height={56}
+              className="rounded-xl shadow-md object-cover aspect-square"
+            />
             <div>
               <time className="text-sm text-gray-400">2025</time>
               <p className="text-base text-white font-medium">Started PhD in Biomedical Engineering at UofT</p>
