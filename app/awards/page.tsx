@@ -40,7 +40,7 @@ export default function AwardsPage() {
     },
     {
       title: "The Professor William Kingston and Dr John Kingston Scholarship",
-      issuer: "Victoria College",
+      issuer: "Victoria University",
       date: "Sep 2024",
       amount: "$1,000",
       description: "In-course scholarship awarded based on academic merit.",

@@ -106,7 +106,7 @@ export default function AboutPage() {
             />
             <div>
               <time className="text-sm text-gray-400">2022</time>
-              <p className="text-base text-white font-medium">Traveled to Istanbul, which was the closest exeprience to heaven on earth for me</p>
+              <p className="text-base text-white font-medium">Traveled to Istanbul, which was the closest experience to heaven on earth for me</p>
             </div>
           </li>
           <li className="flex items-center gap-6">
