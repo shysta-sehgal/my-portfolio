@@ -6,7 +6,7 @@ export default function Home() {
 
 <div className="relative w-[240px] h-[240px] rounded-full overflow-hidden border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300">
   <Image
-    src="/profile.jpg"
+    src="/Shysta Sehgal-07.jpg"
     alt="Profile picture"
     fill
     className="object-cover"
